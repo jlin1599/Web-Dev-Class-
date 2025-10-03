@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feane Bistro | Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html">Feane<span> Bistro</span></a>
+        <nav class="nav" id="site-nav" aria-label="Primary">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a class="active" href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="hamburger" id="hamburger" aria-controls="site-nav" aria-expanded="false" aria-label="Open Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero small">
+        <div class="container">
+          <h1>Contact Us</h1>
+          <p>We'd love to hear from you.</p>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="visit-heading">
+        <div class="container contact-grid">
+          <div>
+            <h2 id="visit-heading">Visit</h2>
+            <p>123 Market Street, Springfield, USA</p>
+            <div class="map-wrapper">
+              <iframe
+                title="Google Map to Feane Bistro"
+                src="https://www.google.com/maps?q=New%20York&output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+          <div>
+            <h2>Message Us</h2>
+            <form class="contact-form" id="contact-form" novalidate>
+              <div class="form-field">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" required />
+                <span class="error" data-for="name"></span>
+              </div>
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required />
+                <span class="error" data-for="email"></span>
+              </div>
+              <div class="form-field">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <span class="error" data-for="message"></span>
+              </div>
+              <button type="submit" class="btn btn-primary">Send</button>
+              <p class="form-success" id="form-success" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>Feane Bistro</h3>
+          <p>Fresh, seasonal dishes in the heart of town.</p>
+        </div>
+        <div>
+          <h4>Hours</h4>
+          <ul class="hours">
+            <li>Mon–Thu: 11am – 9pm</li>
+            <li>Fri–Sat: 11am – 11pm</li>
+            <li>Sun: 11am – 8pm</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Follow</h4>
+          <ul class="social">
+            <li><a href="#" aria-label="Facebook">Facebook</a></li>
+            <li><a href="#" aria-label="Instagram">Instagram</a></li>
+            <li><a href="#" aria-label="Twitter">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container copyright">© <span id="year"></span> Feane Bistro</div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+  </html>
+
+

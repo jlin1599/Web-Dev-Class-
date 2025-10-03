@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feane Bistro | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html">Feane<span> Bistro</span></a>
+        <nav class="nav" id="site-nav" aria-label="Primary">
+          <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="hamburger" id="hamburger" aria-controls="site-nav" aria-expanded="false" aria-label="Open Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" role="banner" aria-label="Restaurant hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+          <h1>Fresh. Local. Memorable.</h1>
+          <p>Experience seasonal cuisine crafted with heart.</p>
+          <a class="btn btn-primary" href="menu.html">Explore the Menu</a>
+        </div>
+      </section>
+
+      <section class="featured-menu section" aria-labelledby="featured-heading">
+        <div class="container">
+          <h2 id="featured-heading">Chef's Favorites</h2>
+          <div class="card-grid">
+            <article class="card">
+              <img src="https://images.unsplash.com/photo-1481931098730-318b6f776db0?q=80&w=1200&auto=format&fit=crop" alt="Herb roasted chicken with vegetables" />
+              <div class="card-body">
+                <h3>Herb Roasted Chicken</h3>
+                <p>With garden vegetables and lemon jus.</p>
+                <span class="price">$18</span>
+              </div>
+            </article>
+            <article class="card">
+              <img src="https://images.unsplash.com/photo-1541745537413-b804c23b0e0b?q=80&w=1200&auto=format&fit=crop" alt="Margherita pizza with basil" />
+              <div class="card-body">
+                <h3>Margherita Pizza</h3>
+                <p>San Marzano tomatoes, mozzarella, basil.</p>
+                <span class="price">$14</span>
+              </div>
+            </article>
+            <article class="card">
+              <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=1200&auto=format&fit=crop" alt="Chocolate lava cake dessert" />
+              <div class="card-body">
+                <h3>Chocolate Lava Cake</h3>
+                <p>Warm center, vanilla bean gelato.</p>
+                <span class="price">$9</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery section" aria-labelledby="gallery-heading">
+        <div class="container">
+          <h2 id="gallery-heading">Gallery</h2>
+          <div class="slider" id="gallery-slider" aria-roledescription="carousel" aria-label="Food gallery">
+            <button class="slider-btn prev" aria-label="Previous slide" data-dir="-1">&#10094;</button>
+            <div class="slides" role="group">
+              <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=1600&auto=format&fit=crop" alt="Dining room ambiance" />
+              <img src="https://images.unsplash.com/photo-1526318472351-c75fcf070305?q=80&w=1600&auto=format&fit=crop" alt="Signature pasta dish" />
+              <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=1600&auto=format&fit=crop" alt="Fresh salad bowl" />
+              <img src="https://images.unsplash.com/photo-1549931319-a545dcf3bc73?q=80&w=1600&auto=format&fit=crop" alt="Sourdough bread basket" />
+              <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?q=80&w=1600&auto=format&fit=crop" alt="Barista making coffee" />
+              <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=1600&auto=format&fit=crop" alt="Open kitchen view" />
+            </div>
+            <button class="slider-btn next" aria-label="Next slide" data-dir="1">&#10095;</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>Feane Bistro</h3>
+          <p>Fresh, seasonal dishes in the heart of town.</p>
+        </div>
+        <div>
+          <h4>Hours</h4>
+          <ul class="hours">
+            <li>Mon–Thu: 11am – 9pm</li>
+            <li>Fri–Sat: 11am – 11pm</li>
+            <li>Sun: 11am – 8pm</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Follow</h4>
+          <ul class="social">
+            <li><a href="#" aria-label="Facebook">Facebook</a></li>
+            <li><a href="#" aria-label="Instagram">Instagram</a></li>
+            <li><a href="#" aria-label="Twitter">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container copyright">© <span id="year"></span> Feane Bistro</div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+  </html>
+
+
