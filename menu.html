@@ -21,6 +21,10 @@
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
+        <button class="cart-toggle" id="cart-toggle" aria-label="Open Shopping Cart">
+          <span class="cart-icon">🛒</span>
+          <span class="cart-count" id="cart-count">0</span>
+        </button>
         <button class="hamburger" id="hamburger" aria-controls="site-nav" aria-expanded="false" aria-label="Open Menu">
           <span></span><span></span><span></span>
         </button>
@@ -40,19 +44,25 @@
           <h2 id="starters-heading">Starters</h2>
           <div class="menu-grid">
             <article class="menu-card">
+              <img src="assets/images/Bruschetta.png" alt="Bruschetta with tomatoes and basil" />
               <h3>Bruschetta</h3>
               <p>Tomatoes, basil, garlic, grilled sourdough.</p>
               <span class="price">$8</span>
+              <button class="add-to-cart-btn" data-name="Bruschetta" data-price="8" data-description="Tomatoes, basil, garlic, grilled sourdough.">Add to Cart</button>
             </article>
             <article class="menu-card">
+              <img src="assets/images/Seasonal Soup.png" alt="Seasonal soup bowl" />
               <h3>Seasonal Soup</h3>
               <p>Ask about today's selection.</p>
               <span class="price">$7</span>
+              <button class="add-to-cart-btn" data-name="Seasonal Soup" data-price="7" data-description="Ask about today's selection.">Add to Cart</button>
             </article>
             <article class="menu-card">
+              <img src="assets/images/Calamari.png" alt="Calamari with lemon aioli" />
               <h3>Calamari</h3>
               <p>Lemon aioli and fresh herbs.</p>
               <span class="price">$11</span>
+              <button class="add-to-cart-btn" data-name="Calamari" data-price="11" data-description="Lemon aioli and fresh herbs.">Add to Cart</button>
             </article>
           </div>
         </div>
@@ -63,19 +73,25 @@
           <h2 id="mains-heading">Mains</h2>
           <div class="menu-grid">
             <article class="menu-card">
+              <img src="assets/images/Grilled Salmon.png" alt="Grilled salmon with asparagus" />
               <h3>Grilled Salmon</h3>
               <p>Asparagus, citrus butter.</p>
               <span class="price">$21</span>
+              <button class="add-to-cart-btn" data-name="Grilled Salmon" data-price="21" data-description="Asparagus, citrus butter.">Add to Cart</button>
             </article>
             <article class="menu-card">
+              <img src="assets/images/Ribeye Steak.png" alt="Ribeye steak with garlic mash" />
               <h3>Ribeye Steak</h3>
               <p>Garlic mash, peppercorn sauce.</p>
               <span class="price">$28</span>
+              <button class="add-to-cart-btn" data-name="Ribeye Steak" data-price="28" data-description="Garlic mash, peppercorn sauce.">Add to Cart</button>
             </article>
             <article class="menu-card">
+              <img src="assets/images/Truffle Pasta.png" alt="Truffle pasta with wild mushrooms" />
               <h3>Truffle Pasta</h3>
               <p>Wild mushrooms, parmesan.</p>
               <span class="price">$19</span>
+              <button class="add-to-cart-btn" data-name="Truffle Pasta" data-price="19" data-description="Wild mushrooms, parmesan.">Add to Cart</button>
             </article>
           </div>
         </div>
@@ -86,19 +102,25 @@
           <h2 id="desserts-heading">Desserts</h2>
           <div class="menu-grid">
             <article class="menu-card">
+              <img src="assets/images/Crème Brûlée.png" alt="Crème brûlée dessert" />
               <h3>Crème Brûlée</h3>
               <p>Madagascar vanilla bean.</p>
               <span class="price">$8</span>
+              <button class="add-to-cart-btn" data-name="Crème Brûlée" data-price="8" data-description="Madagascar vanilla bean.">Add to Cart</button>
             </article>
             <article class="menu-card">
+              <img src="assets/images/Tiramisu.png" alt="Tiramisu dessert" />
               <h3>Tiramisu</h3>
               <p>Classic espresso and mascarpone.</p>
               <span class="price">$9</span>
+              <button class="add-to-cart-btn" data-name="Tiramisu" data-price="9" data-description="Classic espresso and mascarpone.">Add to Cart</button>
             </article>
             <article class="menu-card">
+              <img src="assets/images/Gelato Trio.png" alt="Gelato trio dessert" />
               <h3>Gelato Trio</h3>
               <p>Ask for today's flavors.</p>
               <span class="price">$7</span>
+              <button class="add-to-cart-btn" data-name="Gelato Trio" data-price="7" data-description="Ask for today's flavors.">Add to Cart</button>
             </article>
           </div>
         </div>
@@ -130,6 +152,27 @@
       </div>
       <div class="container copyright">© <span id="year"></span> Feane Bistro</div>
     </footer>
+
+    <!-- Shopping Cart Sidebar -->
+    <div class="cart-sidebar" id="cart-sidebar">
+      <div class="cart-header">
+        <h3>Shopping Cart</h3>
+        <button class="cart-close" id="cart-close" aria-label="Close Cart">×</button>
+      </div>
+      <div class="cart-items" id="cart-items">
+        <!-- Cart items will be dynamically inserted here -->
+      </div>
+      <div class="cart-footer">
+        <div class="cart-total">
+          <strong>Total: $<span id="cart-total">0.00</span></strong>
+        </div>
+        <div class="cart-actions">
+          <button class="btn btn-secondary" id="clear-cart">Clear Cart</button>
+          <button class="btn btn-primary" id="checkout-btn">Checkout</button>
+        </div>
+      </div>
+    </div>
+    <div class="cart-overlay" id="cart-overlay"></div>
 
     <script src="assets/js/main.js"></script>
   </body>
